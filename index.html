@@ -10,7 +10,7 @@
 
 <body>
   <form action="" class="searchForm">
-    <input type="text" id="oldTime" class="textBox" placeholder="Enter any amount of time in seconds here" pattern="[^\D]" min="0" minlength="1" onClick="this.select();"></input>
+    <input type="text" id="oldTime" class="textBox" placeholder="Enter any amount of time in seconds here" pattern="[^\D]*" min="0" minlength="1" onclick="this.select();"></input>
     <textarea id="humanTime" class="textBox" placeholder="Value will appear here" disabled></textarea>
     <p>Here's a simple script that will convert any amount of time in seconds to a human-readable format!</p>
   </form>
