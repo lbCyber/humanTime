@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
     })
     return tot==0?`now`:str
   }
-  document.getElementById("submit").addEventListener("click", ()=>{
-    let oldTime = document.getElementById("humanTime").value
+  document.getElementById("oldTime").addEventListener("input", ()=>{
+    let oldTime = document.getElementById("oldTime").value
     let newTime = ""
     newTime = formatDuration(oldTime)
     document.getElementById("humanTime").value = newTime
